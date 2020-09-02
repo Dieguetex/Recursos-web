@@ -1,0 +1,88 @@
+@import "./reset.css";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 25px;
+}
+h4 {
+  font-size: 22px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 17px;
+}
+
+main section a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+header,
+nav,
+main,
+footer {
+  margin: 1rem 1rem 3rem 1rem;
+}
+
+header {
+  margin-bottom: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+nav {
+  text-align: center;
+}
+
+footer {
+  margin-bottom: 1rem;
+  display: grid;
+  justify-content: center;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+article {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+#lista {
+  flex-flow: column wrap;
+  align-items: stretch;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.column p {
+  margin-left: 1rem;
+}
