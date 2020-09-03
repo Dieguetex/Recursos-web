@@ -57,7 +57,17 @@ h4 {
 }
 
 body {
-  background: #f3f3f3;
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 nav,
@@ -80,11 +90,16 @@ header.background {
       var(--four) 50%,
       transparent 50%
     ),
-    linear-gradient(8deg, transparent 50%, rgba(233, 233, 233, 233) 30%, black);
+    linear-gradient(8deg, transparent 50%, #e0eafc, #cfdef3 55%, black);
 }
 
 nav {
   text-align: center;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
